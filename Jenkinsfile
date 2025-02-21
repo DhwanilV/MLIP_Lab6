@@ -21,11 +21,12 @@ pipeline {
                 # TODO Complete the command to run pytest
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
 
+                echo "Test Step: Running pytest using the virtual environment"
+                /workspace/mlip_jen/bin/pytest /workspace/MLIP_Lab6
+                
                 # echo 'pytest not runned'
                 # exit 1 #comment this line after implementing Jenkinsfile
                 '''
-                /workspace/mlip_jen/bin/pytest /workspace/MLIP_Lab6
-
             }
         }
         stage('Deploy') {
