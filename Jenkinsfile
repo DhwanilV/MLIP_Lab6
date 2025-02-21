@@ -24,7 +24,7 @@ pipeline {
                 # echo 'pytest not runned'
                 # exit 1 #comment this line after implementing Jenkinsfile
                 '''
-                sudo /workspace/mlip_jen/bin/pytest /workspace/MLIP_Lab6
+                /workspace/mlip_jen/bin/pytest /workspace/MLIP_Lab6
 
             }
         }
